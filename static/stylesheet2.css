@@ -1,0 +1,21 @@
+body{
+background-image: url(saa.jpg);
+background-repeat: no-repeat;
+background-size: 2000px 1000px;
+background-color:lightblue;
+}
+div{
+width:450px;
+height:350px;
+background-color:pink;
+float: center;
+margin-top:200px;
+margin-left:550px;
+
+border: 1px solid pink;
+border-radius: 15px;
+
+
+display: table;
+text-align: center;
+}

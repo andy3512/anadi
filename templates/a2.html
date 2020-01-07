@@ -1,0 +1,48 @@
+{%load static%}
+<!doctype html>
+<html>
+<head>
+<title>Andy</title>
+<script src="text.js"></script>
+<link type="text/css" rel="stylesheet" href="{% static 'stylesheet3.css' %}">
+<style>
+a.logout{
+    text-decoration: none;
+    background-color:gray;
+    width: 80px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    
+} 
+a.logout:hover{
+    background-color: rgb(37, 55, 93);
+    color: lightblue;
+}
+h3.logout{
+    text-align: right;
+    text-decoration: none;
+}
+</style>
+</head>
+<body> 
+<h1 id="h">Hey, {{user.username}} what do you wnat to buy ?</h1><br>
+<div>
+
+
+<ol>
+<li><a href="xerox">Xerox</a></li><br>
+<li><a href="xerox">Urgent Xerox</a></li><br>
+<li><a href="xerox">Note Books</a></li><br>
+<li><a href="xerox">Pen and pencil</a></li><br>
+<li><a href="xerox">Any other instruments or books</a></li>
+
+</ol>
+</div>
+<h3 class="logout">
+<a class="logout"href="accounts/logout">log out</a>
+</h3>
+
+
+</body>
+</html>

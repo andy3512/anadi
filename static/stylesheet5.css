@@ -1,0 +1,31 @@
+body{
+background-image: url(saa.jpg);
+background-repeat: no-repeat;
+background-size: 2000px 1000px;
+background-color:lightblue;
+}
+
+
+
+#h{
+font-size:90px;
+color: rgb(218,37,196);
+margin-left:15px;
+text-shadow:3px 3px 5px pink;
+margin-top:0px;
+text-align:center;
+}
+
+h3{
+text-align:right;
+text-decoration:underline;
+}
+input.submit{
+font-size:20px;
+border-radius: 10px;
+background-color: silver;
+color: purple;
+}
+input.submit:hover{
+background-color:gray;
+}

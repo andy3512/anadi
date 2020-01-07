@@ -1,0 +1,34 @@
+{%load static%}
+<!doctype html>
+<html>
+<head>
+<title>Andy</title>
+<script src="text.js"></script>
+<link type="text/css" rel="stylesheet" href="{% static 'stylesheet5.css' %}">
+<style>
+h2.logout a{
+    text-decoration: none;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 5px;
+} 
+h2.logout a.logout:hover{
+    background-color: rgb(37, 55, 93);
+    color: lightblue;
+}
+    
+
+</style>
+</head>
+<body> 
+<h1 id="h">Thank you {{user.username}}</h1><br>
+<h2>If you clicked on xerox/urgentxeror send your documents on this whatsapp no.: 9016187448 </h2>
+<h2 class="logout">
+    <a class="logout"href="accounts/logout">log out</a>
+</h2>
+<br><br><br><br><br><br><br><br>
+</div><br><br><br><br><br><br><br><br><br>
+
+
+</body>
+</html>

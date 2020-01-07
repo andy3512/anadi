@@ -1,0 +1,61 @@
+{%load static%}
+<!doctype html>
+<html>
+<head>
+<title>Andy</title>
+<style src="text.js">
+input.submit{
+font-size:20px;
+border-radius: 5px;
+background-color: silver;
+color: purple;
+}
+input.submit:hover{
+background-color:gray;
+}
+h1.sta{
+    text-decoration: underline;
+}
+    
+        
+</style>
+<link type="text/css" rel="stylesheet" href="{% static 'stylesheet.css' %}">
+
+</head>
+<body>
+
+<form action="login" method="post">
+        {%csrf_token%}
+<div>
+<h1 class="sta">Stationery</h1><br>
+
+
+<label for="E">{{dest1.username}}:</label>
+<input type="text" id="E" name="username" placeholder="User Name"><br><br>
+
+<label for="P">{{dest1.password}}:</label>
+<input type="password" id="P" name="password" placeholder="Password"><br><br><br>
+
+<input class="submit" type="submit">
+
+<p>or</p>
+
+<a class="c" href="accounts/register">Creat New Account</a><br><br>
+
+<a class="f" href="{%static 'file:///C:/Users/Anadi/Desktop/a.html' %}">Forgotten password?</a>
+
+
+</div>
+</form>
+
+<h1 id="h">
+<i>Welcome to Our Stationery</i>
+<h1>
+{%for message in messages%}
+    <h3>
+        {{message}}
+    </h3>
+{%endfor%}
+
+</body>
+</html>

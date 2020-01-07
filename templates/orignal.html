@@ -1,0 +1,34 @@
+{%load static%}
+<!doctype html>
+<html>
+<head>
+<title>Andy</title>
+<script src="{% static 'text2.js' %}"></script>
+<link type="text/css" rel="stylesheet" href="{% static 'stylesheet4.css' %}">
+<style>
+
+</style>
+</head>
+<body> 
+<h1 id="h">Fill the details</h1><br>
+
+<form action="store" method="post" onsubmit="return validateTextbox2();">
+    {% csrf_token %}   
+<div>
+<ol>
+<li><label for="name">{{det.name}} : </label><input id="name" type="text" name="name"></li><br>
+<li><label for="branch">{{det.branch}} : </label><input id="branch" type="text" name="branch"></li><br>
+<li><label for="hname">{{det.hostelname}} : </label><input id="hname" type="text" name="hostelname"></li><br>
+<li><label for="room">{{det.roomno}} : </label><input id="room" type="text" name="roomno"></li><br>
+<li><label for="contect">{{det.contectno}} : </label><input id="contect" type="text" name="contectno"></li><br>
+<input class="submit" type="submit" value="submit">
+
+</ol>
+</div>
+</form>
+
+<br><br><br><br><br><br><br><br><br>
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+{%load static%}
+<!doctype html>
+<html>
+<head>
+<title>Andy</title>
+<script src="{% static 'text.js' %}"></script>
+<link type="text/css" rel="stylesheet" href="{% static 'stylesheet2.css' %}">
+<style>
+    input.submit{
+        font-size:20px;
+        border-radius: 5px;
+        background-color: silver;
+        color: purple;
+        }
+    input.submit:hover{
+        background-color:gray;
+        }
+    h1{
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<form id="theform" action="register" method="post" onsubmit="return validateTextbox();">
+    {%csrf_token%}
+<div>
+<br>
+
+<h1>Creat New Account</h1><br><br>
+
+<label for="u">User Name:</label>
+<input type="text" id="u" name="username" placeholder="User Name"><br><br>
+
+<label for="p">Creat Password:</label>
+<input type="password" id="p" name="password" placeholder="Password" ><br><br>
+
+<input class="submit" type="submit" value="submit">
+
+
+</div>
+</form>
+
+{%for message in messages%}
+    <h3>
+        {{message}}
+    </h3>
+{%endfor%}
+</body>
+</html>

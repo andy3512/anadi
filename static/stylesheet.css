@@ -1,0 +1,50 @@
+body{
+background-image: url(saa.jpg);
+background-repeat: no-repeat;
+background-size: 2000px 1000px;
+background-color:lightblue;
+}
+
+div{
+width:350px;
+height:350px;
+background-color:pink;
+float: right;
+margin-top:25px;
+
+border: 1px solid pink;
+border-radius: 15px;
+text-align:center;
+}
+
+#h{
+font-size:100px;
+color: rgb(218,37,196);
+margin-left:15px;
+text-shadow:3px 3px 5px pink;
+margin-top:0px;
+}
+
+a.l , a.c{
+text-decoration: none;
+background-color:silver;
+width: 80px;
+margin: 5px;
+padding: 10px;
+border-radius: 5px; 
+}
+
+a.f{
+text-decoration: none; 
+font-size: 13px;
+}
+
+a.c:hover , a.l:hover{
+background-color:gray;
+}
+
+
+p{
+text-decoration:underline;
+}
+
