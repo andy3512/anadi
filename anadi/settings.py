@@ -80,8 +80,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'anadi',
-        'USER': 'postgres',
-        'PASSWORD': '3512',
+        'USER': 'jcrnzllxfjhfrb',
+        'PASSWORD': 'b33d672d3bc69b021b4d442ef9f2f473d59887e1a645f0cbbdaa90738bf8c6e0',
         'HOST': 'ec2-174-129-33-201.compute-1.amazonaws.com'
     }
 }
