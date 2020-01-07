@@ -1,1 +1,1 @@
-web: gunicorn anadi.wsgi --log-file-
+web: gunicorn anadi.wsgi --log-file
