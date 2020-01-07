@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'anadi',
         'USER': 'postgres',
         'PASSWORD': '3512',
-        'HOST': 'localhost'
+        'HOST': 'ec2-174-129-33-201.compute-1.amazonaws.com'
     }
 }
 
