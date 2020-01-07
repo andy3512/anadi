@@ -82,7 +82,6 @@ DATABASES = {
         'NAME': 'anadi',
         'USER': 'postgres',
         'PASSWORD': '3512',
-        'HOST': 'localhost'
     }
 }
 
